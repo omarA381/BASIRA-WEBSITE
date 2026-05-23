@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بصيرة ERP | النظام المحاسبي الذكي وفصل الصلاحيات</title>
+  
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <i class="fa-solid fa-eye-low-vision logo-icon"></i>
+        <span>بصيرة <span class="accent">ERP</span></span>
+      </div>
+      <nav class="nav-menu">
+        <a href="#hero" class="active">الرئيسية</a>
+        <a href="#features">موديولات النظام</a>
+        <a href="#interactive-tour">الرحلة التعريفية</a>
+        <a href="#developer">المطور</a>
+        <a href="#contact" class="btn-nav">تواصل معنا</a>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge-hero"><i class="fa-solid fa-sparkles"></i> الجيل الجديد من الأنظمة المحاسبية</span>
+        <h1 class="hero-title">نظام بصيرة المحاسبي المتكامل وبفصل الصلاحيات <span class="text-gradient">(SoD)</span></h1>
+        <p class="hero-desc">
+          حل برمجيات التخطيط والمحاسبة الذكي للمؤسسات المتوسطة والكبيرة. يعمل بكفاءة قصوى مع قواعد بيانات PostgreSQL الشبكية أو SQLite المحلية، مجهز بـ 30 صلاحية دقيقة ومصفوفة رقابية تمنع الاحتيال المالي والإداري.
+        </p>
+        <div class="hero-actions">
+          <a href="#interactive-tour" class="btn btn-primary">ابدأ الرحلة التعريفية <i class="fa-solid fa-arrow-left"></i></a>
+          <a href="#features" class="btn btn-secondary">اكتشف الموديولات</a>
+        </div>
+      </div>
+      
+      <!-- Interactive Hero Mockup (Drawn with pure CSS/HTML) -->
+      <div class="hero-mockup animate-float">
+        <div class="mockup-header">
+          <div class="mockup-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="mockup-title">Basira ERP - لوحة التحكم الرئيسية</div>
+          <div class="mockup-db-indicator">
+            <i class="fa-solid fa-database text-amber"></i> SQLite (محلي)
+          </div>
+        </div>
+        <div class="mockup-body">
+          <div class="mockup-sidebar">
+            <div class="sidebar-item active"><i class="fa-solid fa-chart-pie"></i> لوحة التحكم</div>
+            <div class="sidebar-item"><i class="fa-solid fa-wallet"></i> المالية والقيود</div>
+            <div class="sidebar-item"><i class="fa-solid fa-cart-shopping"></i> المشتريات</div>
+            <div class="sidebar-item"><i class="fa-solid fa-boxes-stacked"></i> المخازن</div>
+            <div class="sidebar-item"><i class="fa-solid fa-industry"></i> التصنيع</div>
+            <div class="sidebar-item"><i class="fa-solid fa-shield-halved"></i> الأمان و SoD</div>
+          </div>
+          <div class="mockup-content">
+            <div class="mockup-widgets">
+              <div class="widget-card">
+                <span class="widget-label">إجمالي المبيعات</span>
+                <span class="widget-val">124,500 ج.م</span>
+                <span class="widget-trend positive"><i class="fa-solid fa-arrow-trend-up"></i> +12%</span>
+              </div>
+              <div class="widget-card">
+                <span class="widget-label">قيمة المخزون</span>
+                <span class="widget-val">82,400 ج.م</span>
+                <span class="widget-trend"><i class="fa-solid fa-check"></i> مستقر</span>
+              </div>
+              <div class="widget-card">
+                <span class="widget-label">حالة التدقيق الرقابي</span>
+                <span class="widget-val text-emerald">آمن بالكامل</span>
+                <span class="widget-trend positive"><i class="fa-solid fa-shield"></i> فعال</span>
+              </div>
+            </div>
+            <div class="mockup-chart-box">
+              <div class="chart-header">
+                <span>تحليل الأرباح والنفقات (نصف سنوي)</span>
+                <span class="mono">EGP</span>
+              </div>
+              <div class="chart-bars">
+                <div class="chart-bar-group">
+                  <div class="bar bar-income" style="height: 60%"></div>
+                  <div class="bar bar-expense" style="height: 35%"></div>
+                  <span class="bar-month">يناير</span>
+                </div>
+                <div class="chart-bar-group">
+                  <div class="bar bar-income" style="height: 75%"></div>
+                  <div class="bar bar-expense" style="height: 40%"></div>
+                  <span class="bar-month">فبراير</span>
+                </div>
+                <div class="chart-bar-group">
+                  <div class="bar bar-income" style="height: 90%"></div>
+                  <div class="bar bar-expense" style="height: 30%"></div>
+                  <span class="bar-month">مارس</span>
+                </div>
+                <div class="chart-bar-group">
+                  <div class="bar bar-income" style="height: 80%"></div>
+                  <div class="bar bar-expense" style="height: 45%"></div>
+                  <span class="bar-month">أبريل</span>
+                </div>
+                <div class="chart-bar-group">
+                  <div class="bar bar-income" style="height: 95%"></div>
+                  <div class="bar bar-expense" style="height: 25%"></div>
+                  <span class="bar-month">مايو</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bento Grid of System Modules -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">موديولات النظام المحاسبي المتكامل</h2>
+        <p class="section-subtitle">حل برمجيات واحد يغطي كافة احتياجات وأنشطة عملك التجاري والصناعي بكفاءة مطلقة</p>
+      </div>
+      
+      <div class="bento-grid">
+        <!-- Bento Card 1: Accounting -->
+        <div class="bento-card card-tall accent-blue">
+          <div class="card-icon"><i class="fa-solid fa-vault"></i></div>
+          <h3>المحاسبة والمالية الذكية</h3>
+          <p>
+            تتبع القيود المحاسبية، الحسابات الختامية، شجرة الحسابات المرنة، مراكز التكلفة والأرباح، وسندات الدفع والصرف، مع تقارير متكاملة عن الأرباح والخسائر وميزان المراجعة.
+          </p>
+          <div class="card-highlight">
+            <span class="highlight-item"><i class="fa-solid fa-circle-check"></i> سندات صرف وقبض معتمدة</span>
+            <span class="highlight-item"><i class="fa-solid fa-circle-check"></i> ترحيل تلقائي لتكاليف التصنيع</span>
+          </div>
+        </div>
+
+        <!-- Bento Card 2: Sales -->
+        <div class="bento-card accent-indigo">
+          <div class="card-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+          <h3>إدارة المبيعات والفوترة</h3>
+          <p>أبدأ بعروض الأسعار، وحولها بضغطة زر إلى أوامر مبيعات، ثم إلى فواتير ضريبية ترحل للعملاء وتثبت القيود تلقائياً.</p>
+        </div>
+
+        <!-- Bento Card 3: Purchases -->
+        <div class="bento-card accent-amber">
+          <div class="card-icon"><i class="fa-solid fa-truck-field"></i></div>
+          <h3>المشتريات وإدارة الموردين</h3>
+          <p>أدر طلبات الشراء، فواتير الشراء الواردة، ومستحقات الموردين وتتبع فترات الائتمان ومطابقة الأسعار.</p>
+        </div>
+
+        <!-- Bento Card 4: Inventory -->
+        <div class="bento-card accent-emerald">
+          <div class="card-icon"><i class="fa-solid fa-cubes"></i></div>
+          <h3>المستودعات والتحكم بالمخزون</h3>
+          <p>مراقبة مستويات المخزون بالفروع والمخازن المختلفة، تسجيل حركات الصرف والتحويل بدقة لمنع الهدر والتلاعب.</p>
+        </div>
+
+        <!-- Bento Card 5: Manufacturing -->
+        <div class="bento-card card-wide accent-purple">
+          <div class="card-icon"><i class="fa-solid fa-industry"></i></div>
+          <div class="card-content-wrap">
+            <h3>التصنيع وحساب تكلفة الإنتاج</h3>
+            <p>
+              بناء وتحديث قوائم المواد (Bill of Materials - BOM) لأي منتج نهائي، وجدولة وتتبع أوامر التصنيع، وحساب وإثبات تكاليف التشغيل المباشرة والغير مباشرة وترحيلها أوتوماتيكياً للقيود المالية.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bento Card 6: Security & SoD -->
+        <div class="bento-card card-wide accent-rose">
+          <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="card-content-wrap">
+            <h3>فصل الصلاحيات والأمان (SoD)</h3>
+            <p>
+              مصفوفة رقابية ثنائية تقوم بكشف وتنبيه الإدارة عند محاولة منح صلاحيات متداخلة لمهندس أو موظف واحد (مثل الجمع بين إنشاء أمر الشراء واعتماده)، حمايةً لأصول الشركة وتطبيقاً لأعلى معايير الحوكمة المالية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Tour Section -->
+  <section id="interactive-tour" class="tour-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">رحلة تعريفية تفاعلية داخل النظام</h2>
+        <p class="section-subtitle">عِش تجربة استخدام نظام بصيرة ERP وتعرف على خطوات سير العمل الرقابي خطوة بخطوة</p>
+      </div>
+
+      <div class="tour-layout">
+        <!-- Tour Navigation Steps -->
+        <div class="tour-steps">
+          <div class="tour-step-btn active" data-step="1">
+            <span class="step-num">01</span>
+            <div class="step-details">
+              <h4>تهيئة قاعدة البيانات</h4>
+              <p>حرية الاختيار بين PostgreSQL و SQLite</p>
+            </div>
+          </div>
+          <div class="tour-step-btn" data-step="2">
+            <span class="step-num">02</span>
+            <div class="step-details">
+              <h4>الحسابات والقيود المالية</h4>
+              <p>تسجيل وترحيل قيود اليومية بدقة</p>
+            </div>
+          </div>
+          <div class="tour-step-btn" data-step="3">
+            <span class="step-num">03</span>
+            <div class="step-details">
+              <h4>فصل الصلاحيات (SoD)</h4>
+              <p>التحقق من سلامة الأدوار والوظائف</p>
+            </div>
+          </div>
+          <div class="tour-step-btn" data-step="4">
+            <span class="step-num">04</span>
+            <div class="step-details">
+              <h4>التصنيع وتكلفة المواد</h4>
+              <p>حساب وإثبات تكلفة المنتج النهائي</p>
+            </div>
+          </div>
+          <div class="tour-step-btn" data-step="5">
+            <span class="step-num">05</span>
+            <div class="step-details">
+              <h4>النسخ الاحتياطي والاستعادة</h4>
+              <p>أمان واستقرار البيانات بضغطة زر</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour Visual Panel -->
+        <div class="tour-visual-panel">
+          
+          <!-- Step 1 Content -->
+          <div class="tour-step-content active" id="step-content-1">
+            <div class="visual-mockup-wrapper">
+              <!-- Visual Mockup -->
+              <div class="mockup-preview db-choice-preview">
+                <div class="preview-header">تهيئة محرك قاعدة البيانات</div>
+                <div class="preview-switcher">
+                  <div class="preview-tab active">PostgreSQL (شبكي)</div>
+                  <div class="preview-tab">SQLite (محلي)</div>
+                </div>
+                <div class="preview-form">
+                  <div class="preview-field">
+                    <span>مضيف الخادم (Host)</span>
+                    <div class="preview-input">localhost</div>
+                  </div>
+                  <div class="preview-field">
+                    <span>اسم قاعدة البيانات</span>
+                    <div class="preview-input">basira_erp</div>
+                  </div>
+                  <div class="preview-field-ssl">
+                    <span>تفعيل الاتصال الآمن (SSL)</span>
+                    <span class="toggle-indicator active"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tour-step-desc">
+              <h3>حرية الاختيار والمرونة التقنية</h3>
+              <p>
+                يمنحك نظام بصيرة ERP المرونة الكاملة للربط بقاعدة بيانات <strong>PostgreSQL</strong> سحابية أو شبكية للشركات متعددة الفروع، أو تشغيل النظام محليًا بالكامل ومباشرة على جهاز واحد عبر ملف قاعدة بيانات <strong>SQLite</strong> يوضع تلقائيًا بجوار الملف التنفيذي للبرنامج لتجربة سريعة وخفيفة دون أي متطلبات إضافية.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 Content -->
+          <div class="tour-step-content" id="step-content-2">
+            <div class="visual-mockup-wrapper">
+              <div class="mockup-preview ledger-preview">
+                <div class="preview-header">قيد اليومية التلقائي رقم #JV-104</div>
+                <table class="preview-table">
+                  <thead>
+                    <tr>
+                      <th>الحساب</th>
+                      <th>البيان</th>
+                      <th>مدين (EGP)</th>
+                      <th>دائن (EGP)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>حساب المخازن (مواد خام)</td>
+                      <td>استلام خامات أمر إنتاج #23</td>
+                      <td class="text-emerald font-bold">15,000</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>حساب نفقات التشغيل المباشرة</td>
+                      <td>تكاليف عمالة وتشغيل</td>
+                      <td class="text-emerald font-bold">4,500</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>حساب المورد (شريك المشتريات)</td>
+                      <td>إثبات استحقاق مواد خام</td>
+                      <td>-</td>
+                      <td class="text-rose font-bold">19,500</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tour-step-desc">
+              <h3>تسجيل القيود المحاسبية وتتبع النفقات</h3>
+              <p>
+                يقوم النظام بربط كافة العمليات من فواتير مبيعات ومشتريات وعمليات تصنيع مباشرة بالدليل المحاسبي لشركتك. عند استلام خامات أو إصدار فاتورة بيع، يثبت قيد اليومية تلقائياً ويرحل لحساب الأستاذ العام، مما يضمن دقة القوائم المالية اللحظية.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 Content -->
+          <div class="tour-step-content" id="step-content-3">
+            <div class="visual-mockup-wrapper">
+              <div class="mockup-preview sod-preview">
+                <div class="preview-header">فحص مصفوفة فصل الصلاحيات (SoD Audit)</div>
+                <div class="sod-warning-banner">
+                  <div class="warning-title">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span>تم رصد تعارض في صلاحيات الدور "مساعد المشتريات والاعتماد"</span>
+                  </div>
+                  <p class="warning-text">
+                    • <strong>الشراء والاعتماد:</strong> هذا الدور يجمع بين صلاحية إنشاء طلبات الشراء وصلاحية اعتمادها (PO Maker-Checker).
+                  </p>
+                  <p class="warning-text">
+                    • <strong>الفوترة والمدفوعات:</strong> هذا الدور يجمع بين إثبات فواتير الموردين والموافقة على مدفوعاتها النقدية (Billing & Cash).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tour-step-desc">
+              <h3>فصل الصلاحيات التلقائي (Maker-Checker Rule)</h3>
+              <p>
+                لحماية أصول شركتك، يتضمن النظام ذكاءً رقابياً يقوم بفحص الصلاحيات الممنوحة لكل وظيفة. إذا حاول مدير النظام صياغة دور للموظف يسمح له بتمرير عملية مالية واعتمادها بمفرده، يظهر تحذير فوري ويسجل هذا الإجراء في سجل التدقيق غير القابل للتزوير.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 Content -->
+          <div class="tour-step-content" id="step-content-4">
+            <div class="visual-mockup-wrapper">
+              <div class="mockup-preview bom-preview">
+                <div class="preview-header">قائمة المواد (BOM) لمنتج: مكتب خشبي فاخر</div>
+                <div class="preview-bom-tree">
+                  <div class="bom-node root">
+                    <i class="fa-solid fa-box"></i> مكتب خشبي فاخر <span class="badge-price">التكلفة: 2,400 ج.م</span>
+                  </div>
+                  <div class="bom-branches" style="margin-right: 20px; border-right: 2px dashed var(--primary); padding-right: 15px;">
+                    <div class="bom-node"><i class="fa-solid fa-leaf"></i> خشب زان معالج - 4 متر مربع <span class="badge-price">1,600 ج.م</span></div>
+                    <div class="bom-node"><i class="fa-solid fa-brush"></i> طلاء ودهانات مقاومة للخدش - 2 لتر <span class="badge-price">400 ج.م</span></div>
+                    <div class="bom-node"><i class="fa-solid fa-wrench"></i> إكسسوارات ومفصلات حديد - 1 طقم <span class="badge-price">400 ج.م</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tour-step-desc">
+              <h3>التصنيع وتكلفة الإنتاج (BOM & Work Orders)</h3>
+              <p>
+                يتيح موديول التصنيع بناء شجرة قائمة المواد (BOM) للمنتج النهائي مع إدراج التكاليف المباشرة والعمالة. عند تشغيل أمر التصنيع، يتم سحب المواد الخام تلقائيًا من المستودع، وحساب فروق التكلفة، وإضافتها في قيمة المنتج النهائي بالمخزن مع توليد القيود المالية فوراً.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5 Content -->
+          <div class="tour-step-content" id="step-content-5">
+            <div class="visual-mockup-wrapper">
+              <div class="mockup-preview backup-preview">
+                <div class="preview-header">أمان وسجل النسخ الاحتياطي</div>
+                <div class="backup-log-list">
+                  <div class="backup-log-item">
+                    <span class="log-title"><i class="fa-regular fa-file-code"></i> basira_backup_20260523.json</span>
+                    <span class="badge-success">سليم وموقع بمفتاح HMAC</span>
+                  </div>
+                  <div class="backup-log-item">
+                    <span class="log-title"><i class="fa-regular fa-file-code"></i> basira_backup_20260515.json</span>
+                    <span class="badge-success">سليم وموقع بمفتاح HMAC</span>
+                  </div>
+                </div>
+                <button type="button" class="preview-btn-danger"><i class="fa-solid fa-rotate-left"></i> استعادة النسخة الاحتياطية المحددة</button>
+              </div>
+            </div>
+            <div class="tour-step-desc">
+              <h3>أمن البيانات وتوقيع السجلات المشفر</h3>
+              <p>
+                يقوم النظام بحفظ النسخ الاحتياطية وتوقيعها بتشفير هجين بمفتاح signature (HMAC) فريد وخاص بالشركة لمنع أي تعديل أو تزوير خارجي في السجلات المحاسبية. بضغطة زر واحدة ومن واجهة الإعدادات، تستطيع استعادة كامل بيانات النظام بأمان مطلق.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Developer Profile Section -->
+  <section id="developer" class="developer-section">
+    <div class="container developer-grid">
+      <div class="developer-visual">
+        <div class="developer-card-avatar">
+          <i class="fa-solid fa-user-tie avatar-icon"></i>
+        </div>
+        <div class="developer-stats">
+          <div class="dev-stat-item">
+            <span class="number">+4</span>
+            <span class="label">سنوات خبرة</span>
+          </div>
+          <div class="dev-stat-item">
+            <span class="number">+50</span>
+            <span class="label">مشاريع ناجحة</span>
+          </div>
+        </div>
+      </div>
+      <div class="developer-info">
+        <span class="badge-dev">مصمم النظام والمطور الرئيسي</span>
+        <h2>البشمهندس عمر بدر</h2>
+        <h3 class="dev-title">محلل بيانات وخبير تعلم آلة وذكاء اصطناعي</h3>
+        <p>
+          متخصص في تحويل الأرقام المعقدة والبيانات الضخمة إلى رؤى استراتيجية تدعم اتخاذ القرار وتدفع بالشركات نحو النمو. قمت بتصميم وبرمجة معمارية نظام <strong>بصيرة ERP</strong> الهجينة لتأمين الدقة والرقابة في البيانات، ودعم اتخاذ القرارات وحماية الشركات من التعارض الرقابي وصياغة مصفوفة الأدوار.
+        </p>
+        <p class="dev-quote">
+          "أصنع من بياناتك أقوى أصولك."
+        </p>
+        <div class="dev-actions">
+          <a href="https://www.omarbadrdata.foo/ar/" target="_blank" class="btn btn-primary"><i class="fa-solid fa-globe"></i> زيارة موقعي الشخصي</a>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/omar-badr/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/omarbadrdata" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container contact-grid">
+      <div class="contact-text">
+        <h2>لنتحدث عن مشروعك أو طلب ترخيص</h2>
+        <p>هل تبحث عن تخصيص محدد لنظام بصيرة ERP ليناسب دورتك المستندية؟ أو هل تود الحصول على خدمات تحليل البيانات والتعلم الآلي لشركتك؟ تواصل معي مباشرة وسوف نناقش متطلباتك.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span>البريد الإلكتروني</span>
+              <strong>contact@omarbadrdata.foo</strong>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <span>الموقع</span>
+              <strong>القاهرة، جمهورية مصر العربية</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-panel">
+        <h3>أرسل رسالة مباشرة</h3>
+        <form id="contactForm">
+          <div class="form-group">
+            <label class="form-label">الاسم الكريم</label>
+            <input type="text" id="name" required class="form-input" placeholder="اسمك الكريم">
+          </div>
+          <div class="form-group">
+            <label class="form-label">البريد الإلكتروني</label>
+            <input type="email" id="email" required class="form-input" placeholder="yourname@domain.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">عنوان الرسالة</label>
+            <input type="text" id="subject" class="form-input" placeholder="استفسار عن نظام بصيرة">
+          </div>
+          <div class="form-group">
+            <label class="form-label">نص الرسالة</label>
+            <textarea id="message" required class="form-input" rows="4" placeholder="اكتب تفاصيل استفسارك هنا..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-full">إرسال الرسالة <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        <div id="formFeedback" class="form-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="logo">
+        <i class="fa-solid fa-eye-low-vision logo-icon"></i>
+        <span>بصيرة <span class="accent">ERP</span></span>
+      </div>
+      <p class="copyright">
+        © 2026 جميع الحقوق محفوظة. تم التطوير والتحليل بواسطة <a href="https://www.omarbadrdata.foo/ar/" target="_blank">بشمهندس عمر بدر</a>.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>
